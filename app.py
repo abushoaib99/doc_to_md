@@ -16,13 +16,11 @@ file_list = [
 # 3. Initialize MarkItDown
 md = MarkItDown()
 
-print(f"Found {len(file_list)} files to convert in '{input_dir}'.")
 
 # 4. Iterate and convert each file
 for file_path in file_list:
     file_name = os.path.basename(file_path)
     base_name, _ = os.path.splitext(file_name)
-    print("base_name:: ", base_name)
     output_path = os.path.join(output_dir, f"{base_name}.md")
 
     try:
