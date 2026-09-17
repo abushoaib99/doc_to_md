@@ -148,4 +148,4 @@ docker-compose.override.yml
 *.odp
 *.rtf
 *.txt
-.~*
+*lock.*
